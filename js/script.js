@@ -65,10 +65,11 @@ function getRandomQuote() {
 ***/
 
 function getRandomColor() {
-  var o = Math.round;
-  var r = Math.random;
-  var s = 255;
-  document.body.style.backgroundColor = 'rgba(' + o(r() * s) + ',' + o(r() * s) + ',' + o(r() * s) + ',' + r().toFixed(1) + ')';
+  var roundNumber = Math.round;
+  var randomNumber = Math.random;
+  var max = 255;
+  var rgbaColor = 'rgba(' + roundNumber(randomNumber() * max) + ',' + roundNumber(randomNumber() * max) + ',' + roundNumber(randomNumber() * max) + ',' + randomNumber().toFixed(1) + ')';
+  document.body.style.backgroundColor = rgbaColor;
 }
 
 /***
